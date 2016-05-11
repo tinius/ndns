@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>NDNS</title>
+	<script src='lib/d3.min.js'></script>
+	<script src='https://d3js.org/d3-hierarchy.v0.2.min.js'></script>
+	<script src='http://cdn.ractivejs.org/latest/ractive.js'></script>
+	<script src='lib/ractive-events-tap.js'></script>
+	<script src='lib/rsvp-latest.min.js'></script>
+	<script src='lib/chroma.min.js'></script>
+	<link rel='stylesheet' href='styles/styles.css'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+</head>
+<body>
+	<div id='container'>
+	</div>
+	<!-- type text/ractive is used to define a ractivejs template that will be loaded inside the container div -->
+	<script type='text/ractive' id='template'>
+		<div id='svg-wrapper'>
+			<h4 id='first'>The National Diet and Nutrition Survey (2008-2012)</h4>
+			<h4>and the National Food Survey (1942-2000)</h4>
+			<h4>present</h4>
+			<h1>How Britain eats</h1>
+			<h4>in three charts</h4>
+
+			<!-- BAR CHART -->
+
+			<h2>How many grams of <select value='{{selectedFoodKey}}'>
+				{{#each foods:i}}
+					<option value='{{i}}'>{{i}}</option>
+				{{/each}}
+			</select> do Brits in different income quintiles consume every day?</h2>
+			<svg id='chart' height='180' width='{{width}}'>
+				{{#each selectedFood:i}}
+					<rect
+					height='20'
+					width='{{barScale(selectedFood, this)}}'
+					y='{{i*24}}'
+					x='0'
+					fill='{{barColours(i)}}'
+					></rect>
+					<text
+					y='{{15+i*24}}'
+					x='2'
+					fill='white'
+					>{{quintileLabels[i]}}</text>
+					<text
+					y='{{15+i*24}}'
+					x='{{barScale(selectedFood, this) - 4}}'
+					text-anchor='end'
+					fill='white'
+					>{{this.toFixed(2)}} g</text>
+				{{/each}}
+			</svg>
+
+			<!-- BUBBLE CHART -->
+
+			<h2>What percentages do various foods contribute to Brits' total <select value='{{selectedMacroKey}}'>
+				{{#each macros:i}}
+					<option value='{{i}}'>{{i}}</option>
+				{{/each}}
+			</select> intake?</h2>
+
+			<ul>
+				{{#each categories}}
+					<li><div class='legend-box' style='background-color: {{legendColours(this)}};'></div>{{this}}</li>
+				{{/each}}
+			</ul>
+
+			<svg id='bubbles' height='{{height}}' width='{{width}}'>
+				{{#each selectedMacro:i}}
+					{{#if !this.children }}
+						<circle
+						r='{{r}}'
+						transform='{{transformString(x, y)}}'
+						fill='{{bubbleColours(this)}}'
+						stroke-width='3'
+						stroke='{{highlight(this)}}'
+						on-tap='details'
+						></circle>
+					{{/if}}
+				{{/each}}
+
+			</svg>
+			
+			{{#if detailFood === undefined}}
+				<div class='bubble-details'>Tap bubbles to explore individual foods!</div>
+			{{else}}
+				<div class='bubble-details'>{{detailFood.name}}: {{(detailFood.value).toFixed(2)}}% of {{selectedMacroKey}} intake</div>
+			{{/if}}
+
+			<!-- TIMELINE -->
+
+			<h2>How has consumption of <select value='{{selectedTimelineIndex}}'>
+				{{#each histories:i}}
+					<option value='{{i}}'>{{histories[i].food}}</option>
+				{{/each}}
+			</select> changed from 1942 to 2000?</h2>
+			<svg id='timeline' height='{{height}}' width='{{width}}'>
+
+				<!-- dotted lines in timeline chart -->
+
+				{{#each [8,18,28,38,48]:i }}
+					<line
+					x1='{{getX(this)}}'
+					y1='{{height-margins-24}}'
+					x2='{{getX(this)}}'
+					y2='{{margins}}'
+					stroke='#777'
+					stroke-width='2'
+					stroke-linecap='round'
+					stroke-dasharray='1,4'
+					></line>
+				{{/each}}
+
+				<!-- actual timeline follows -->
+
+				{{#each selectedTimeline.vals:i}}
+					{{#if selectedTimeline.vals[i] && selectedTimeline.vals[i+1] && selectedTimeline.vals[i] > 0 }}
+						<line
+						x1='{{getX(i)}}'
+						y1='{{height-getY(selectedTimeline.vals[i], selectedTimeline.vals)}}'
+						x2='{{getX(i+1)}}'
+						y2='{{height-getY(selectedTimeline.vals[i+1], selectedTimeline.vals)}}'
+						stroke='{{d3Blue}}'
+						stroke-width='4'
+						stroke-linecap='round'
+						></line>
+					{{/if}}
+				{{/each}}
+
+				<!-- x and y axes -->
+
+				<line
+				x1='{{margins}}'
+				x2='{{margins}}'
+				y1='{{height-margins-24}}'
+				y2='{{margins}}'
+				stroke='black'
+				stroke-width='2'
+				></line>
+				<line
+				x1='{{margins}}'
+				x2='{{width-margins}}'
+				y1='{{height-margins-24}}'
+				y2='{{height-margins-24}}'
+				stroke='black'
+				stroke-width='2'
+				></line>
+
+				<!-- labels on y axis of timeline -->
+				<text 
+				x='{{margins + 4}}'
+				y='{{margins+12}}'
+				class='time-label'
+				>{{maxLabel(selectedTimeline)}}</text>
+				<text 
+				x='{{margins + 4}}'
+				y='{{height/2-8}}'
+				class='time-label'
+				>{{halfLabel(selectedTimeline)}}</text>
+				<text 
+				x='{{margins + 4}}'
+				y='{{height-margins-28}}'
+				class='time-label'
+				>0</text>
+
+				<!-- x axis and decade labels -->
+
+				<text
+				x='{{getX(8)}}'
+				y='{{height-margins-8}}'
+				text-anchor='middle'
+				>1950</text>
+				<text
+				x='{{getX(18)}}'
+				y='{{height-margins-8}}'
+				text-anchor='middle'
+				>1960</text>
+				<text
+				x='{{getX(28)}}'
+				y='{{height-margins-8}}'
+				text-anchor='middle'
+				>1970</text>
+				<text
+				x='{{getX(38)}}'
+				y='{{height-margins-8}}'
+				text-anchor='middle'
+				>1980</text>
+				<text
+				x='{{getX(48)}}'
+				y='{{height-margins-8}}'
+				text-anchor='middle'
+				>1990</text>
+
+		</div>
+	</script>
+	<script src="lib/app.js"></script>
+</body>
+</html>

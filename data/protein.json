@@ -1,0 +1,851 @@
+{
+  "female": {
+    "children": [
+      {
+        "children": [
+          {
+            "name": "Pasta, rice, pizza and other miscellaneous cereals",
+            "value": 6.571845718533638
+          },
+          {
+            "name": "White bread",
+            "value": 6.1859713878454174
+          },
+          {
+            "name": "Wholemeal bread",
+            "value": 2.0719553141872975
+          },
+          {
+            "name": "Brown, granary and wheatgerm bread",
+            "value": 2.19757212486982
+          },
+          {
+            "name": "Other breads",
+            "value": 0.0
+          },
+          {
+            "name": "High fibre breakfast cereals",
+            "value": 2.3138647876798975
+          },
+          {
+            "name": "Other breakfast cereals",
+            "value": 0.9749533332190679
+          },
+          {
+            "name": "Biscuits",
+            "value": 1.62215380880779
+          },
+          {
+            "name": "Buns, cakes, pastries and fruit pies",
+            "value": 1.8530327317647375
+          },
+          {
+            "name": "Puddings",
+            "value": 0.8402928163092065
+          }
+        ],
+        "name": "Cereals and cereal products"
+      },
+      {
+        "children": [
+          {
+            "name": "Whole milk (3.8% fat)",
+            "value": 2.4538522239675498
+          },
+          {
+            "name": "Semi skimmed milk (1.8% fat)",
+            "value": 5.509411300774975
+          },
+          {
+            "name": "Skimmed milk (0.5% fat)",
+            "value": 0.7915034520351932
+          },
+          {
+            "name": "Other milk and cream",
+            "value": 0.8330099539581934
+          },
+          {
+            "name": "Cheese",
+            "value": 4.286907517531347
+          },
+          {
+            "name": "Yoghurt, fromage frais and other dairy desserts",
+            "value": 2.32867994250176
+          },
+          {
+            "name": "Ice cream",
+            "value": 0.5222886516277973
+          }
+        ],
+        "name": "Milk and milk products"
+      },
+      {
+        "children": [
+          {
+            "name": "Eggs and egg dishes",
+            "value": 2.8138681437378175
+          }
+        ],
+        "name": "Eggs and egg dishes"
+      },
+      {
+        "children": [
+          {
+            "name": "Fat spreads",
+            "value": 0.058670438103764176
+          }
+        ],
+        "name": "Fat spreads"
+      },
+      {
+        "children": [
+          {
+            "name": "Bacon and ham",
+            "value": 3.6998007763106524
+          },
+          {
+            "name": "Beef, veal and dishes",
+            "value": 6.35789190495537
+          },
+          {
+            "name": "Lamb and dishes",
+            "value": 1.8997903749269092
+          },
+          {
+            "name": "Pork and dishes",
+            "value": 2.16122371613119
+          },
+          {
+            "name": "Coated chicken and turkey",
+            "value": 2.1638800482086245
+          },
+          {
+            "name": "Chicken, turkey and dishes",
+            "value": 10.927610932549676
+          },
+          {
+            "name": "Liver and dishes",
+            "value": 0.217166906158533
+          },
+          {
+            "name": "Burgers and kebabs",
+            "value": 1.174834016616821
+          },
+          {
+            "name": "Sausages",
+            "value": 2.548544310957657
+          },
+          {
+            "name": "Meat pies and pastries",
+            "value": 1.1734935694532305
+          },
+          {
+            "name": "Other meat, meat products and dishes",
+            "value": 0.7509526466773349
+          }
+        ],
+        "name": "Meat and meat products"
+      },
+      {
+        "children": [
+          {
+            "name": "White fish coated or fried including fish fingers",
+            "value": 1.70350087698556
+          },
+          {
+            "name": "Other white fish, shellfish or fish dishes and canned tuna",
+            "value": 3.0481919897967127
+          },
+          {
+            "name": "Oily fish",
+            "value": 2.1455977289001815
+          }
+        ],
+        "name": "Fish and fish dishes"
+      },
+      {
+        "children": [
+          {
+            "name": "Salad and other raw vegetables",
+            "value": 0.48466232680602295
+          },
+          {
+            "name": "Vegetables (not raw) including vegetable dishes",
+            "value": 4.325871637252428
+          },
+          {
+            "name": "Chips, fried and roast potatoes and potato products",
+            "value": 1.935207353675535
+          },
+          {
+            "name": "Other potatoes, potato salads and dishes",
+            "value": 1.57566770179969
+          }
+        ],
+        "name": "Vegetables and potatoes"
+      },
+      {
+        "children": [
+          {
+            "name": "Savoury snacks",
+            "value": 0.8321257821335972
+          }
+        ],
+        "name": "Savoury snacks"
+      },
+      {
+        "children": [
+          {
+            "name": "Nuts and seeds",
+            "value": 0.4741833891302908
+          }
+        ],
+        "name": "Nuts and seeds"
+      },
+      {
+        "children": [
+          {
+            "name": "Fruit",
+            "value": 1.3148004525445884
+          }
+        ],
+        "name": "Fruit"
+      },
+      {
+        "children": [
+          {
+            "name": "Sugars, including table sugar, preserves and sweet spreads",
+            "value": 0.0
+          },
+          {
+            "name": "Chocolate confectionery",
+            "value": 0.8817037648515335
+          },
+          {
+            "name": "Sugar confectionery",
+            "value": 0.0
+          }
+        ],
+        "name": "Sugar, preserves and confectionery"
+      },
+      {
+        "children": [
+          {
+            "name": "Fruit juice",
+            "value": 0.44112156853794204
+          },
+          {
+            "name": "Tea, coffee and water",
+            "value": 0.3768843810872906
+          },
+          {
+            "name": "Soft drinks, not low calorie",
+            "value": 0.0
+          }
+        ],
+        "name": "Non-alcoholic beverages"
+      },
+      {
+        "children": [
+          {
+            "name": "Beer, lager, cider and perry",
+            "value": 0.0827852543276965
+          },
+          {
+            "name": "Wine",
+            "value": 0.0
+          },
+          {
+            "name": "Spirits and liqueurs",
+            "value": 0.0
+          }
+        ],
+        "name": "Alcoholic beverages"
+      },
+      {
+        "children": [
+          {
+            "name": "Dry weight beverages",
+            "value": 0.43780848457305527
+          },
+          {
+            "name": "Soup, manufactured/retail and homemade",
+            "value": 0.865803367102891
+          },
+          {
+            "name": "Savoury sauces, pickles, gravies and condiments",
+            "value": 0.6918733987685598
+          }
+        ],
+        "name": "Miscellaneous"
+      }
+    ],
+    "name": "foods"
+  },
+  "male": {
+    "children": [
+      {
+        "children": [
+          {
+            "name": "Pasta, rice, pizza and other miscellaneous cereals",
+            "value": 6.319328962983813
+          },
+          {
+            "name": "White bread",
+            "value": 7.240771242406723
+          },
+          {
+            "name": "Wholemeal bread",
+            "value": 2.1249264878115577
+          },
+          {
+            "name": "Brown, granary and wheatgerm bread",
+            "value": 2.027384790140545
+          },
+          {
+            "name": "Other breads",
+            "value": 0.0
+          },
+          {
+            "name": "High fibre breakfast cereals",
+            "value": 2.1838911779569576
+          },
+          {
+            "name": "Other breakfast cereals",
+            "value": 0.8855825190179126
+          },
+          {
+            "name": "Biscuits",
+            "value": 1.4340290890306142
+          },
+          {
+            "name": "Buns, cakes, pastries and fruit pies",
+            "value": 1.7583934242079524
+          },
+          {
+            "name": "Puddings",
+            "value": 0.7902551356728119
+          }
+        ],
+        "name": "Cereals and cereal products"
+      },
+      {
+        "children": [
+          {
+            "name": "Whole milk (3.8% fat)",
+            "value": 2.6301952677586575
+          },
+          {
+            "name": "Semi skimmed milk (1.8% fat)",
+            "value": 5.343007190627734
+          },
+          {
+            "name": "Skimmed milk (0.5% fat)",
+            "value": 0.5907078708351863
+          },
+          {
+            "name": "Other milk and cream",
+            "value": 0.7547797247970648
+          },
+          {
+            "name": "Cheese",
+            "value": 4.319393084860025
+          },
+          {
+            "name": "Yoghurt, fromage frais and other dairy desserts",
+            "value": 1.70942115894473
+          },
+          {
+            "name": "Ice cream",
+            "value": 0.43503777199358273
+          }
+        ],
+        "name": "Milk and milk products"
+      },
+      {
+        "children": [
+          {
+            "name": "Eggs and egg dishes",
+            "value": 2.590861179483005
+          }
+        ],
+        "name": "Eggs and egg dishes"
+      },
+      {
+        "children": [
+          {
+            "name": "Fat spreads",
+            "value": 0.0624308135179516
+          }
+        ],
+        "name": "Fat spreads"
+      },
+      {
+        "children": [
+          {
+            "name": "Bacon and ham",
+            "value": 4.34901056836423
+          },
+          {
+            "name": "Beef, veal and dishes",
+            "value": 6.290613380574955
+          },
+          {
+            "name": "Lamb and dishes",
+            "value": 2.046052828444507
+          },
+          {
+            "name": "Pork and dishes",
+            "value": 2.4614896209596027
+          },
+          {
+            "name": "Coated chicken and turkey",
+            "value": 2.10516818964381
+          },
+          {
+            "name": "Chicken, turkey and dishes",
+            "value": 10.208901657187107
+          },
+          {
+            "name": "Liver and dishes",
+            "value": 0.3134156065272903
+          },
+          {
+            "name": "Burgers and kebabs",
+            "value": 1.5648619052084625
+          },
+          {
+            "name": "Sausages",
+            "value": 3.2013530277493047
+          },
+          {
+            "name": "Meat pies and pastries",
+            "value": 1.7195311040845125
+          },
+          {
+            "name": "Other meat, meat products and dishes",
+            "value": 1.1524572241158615
+          }
+        ],
+        "name": "Meat and meat products"
+      },
+      {
+        "children": [
+          {
+            "name": "White fish coated or fried including fish fingers",
+            "value": 2.073071289513225
+          },
+          {
+            "name": "Other white fish, shellfish or fish dishes and canned tuna",
+            "value": 2.9460723440153203
+          },
+          {
+            "name": "Oily fish",
+            "value": 1.9369288545452936
+          }
+        ],
+        "name": "Fish and fish dishes"
+      },
+      {
+        "children": [
+          {
+            "name": "Salad and other raw vegetables",
+            "value": 0.3477333532272675
+          },
+          {
+            "name": "Vegetables (not raw) including vegetable dishes",
+            "value": 3.8034316190394626
+          },
+          {
+            "name": "Chips, fried and roast potatoes and potato products",
+            "value": 2.0644315056373026
+          },
+          {
+            "name": "Other potatoes, potato salads and dishes",
+            "value": 1.2490581612626224
+          }
+        ],
+        "name": "Vegetables and potatoes"
+      },
+      {
+        "children": [
+          {
+            "name": "Savoury snacks",
+            "value": 0.831847245513998
+          }
+        ],
+        "name": "Savoury snacks"
+      },
+      {
+        "children": [
+          {
+            "name": "Nuts and seeds",
+            "value": 0.49726371253018775
+          }
+        ],
+        "name": "Nuts and seeds"
+      },
+      {
+        "children": [
+          {
+            "name": "Fruit",
+            "value": 1.0133850896102188
+          }
+        ],
+        "name": "Fruit"
+      },
+      {
+        "children": [
+          {
+            "name": "Sugars, including table sugar, preserves and sweet spreads",
+            "value": 0.0
+          },
+          {
+            "name": "Chocolate confectionery",
+            "value": 0.8308443826415742
+          },
+          {
+            "name": "Sugar confectionery",
+            "value": 0.0
+          }
+        ],
+        "name": "Sugar, preserves and confectionery"
+      },
+      {
+        "children": [
+          {
+            "name": "Fruit juice",
+            "value": 0.42294257503110744
+          },
+          {
+            "name": "Tea, coffee and water",
+            "value": 0.28316321225411345
+          },
+          {
+            "name": "Soft drinks, not low calorie",
+            "value": 0.0
+          }
+        ],
+        "name": "Non-alcoholic beverages"
+      },
+      {
+        "children": [
+          {
+            "name": "Beer, lager, cider and perry",
+            "value": 0.5520927278175788
+          },
+          {
+            "name": "Wine",
+            "value": 0.0
+          },
+          {
+            "name": "Spirits and liqueurs",
+            "value": 0.0
+          }
+        ],
+        "name": "Alcoholic beverages"
+      },
+      {
+        "children": [
+          {
+            "name": "Dry weight beverages",
+            "value": 0.17715079445171072
+          },
+          {
+            "name": "Soup, manufactured/retail and homemade",
+            "value": 0.675917586259613
+          },
+          {
+            "name": "Savoury sauces, pickles, gravies and condiments",
+            "value": 0.6407066290093123
+          }
+        ],
+        "name": "Miscellaneous"
+      }
+    ],
+    "name": "foods"
+  },
+  "total": {
+    "children": [
+      {
+        "children": [
+          {
+            "name": "Pasta, rice, pizza and other miscellaneous cereals",
+            "value": 6.445587340758726
+          },
+          {
+            "name": "White bread",
+            "value": 6.71337131512607
+          },
+          {
+            "name": "Wholemeal bread",
+            "value": 2.0984409009994276
+          },
+          {
+            "name": "Brown, granary and wheatgerm bread",
+            "value": 2.1124784575051825
+          },
+          {
+            "name": "Other breads",
+            "value": 0.0
+          },
+          {
+            "name": "High fibre breakfast cereals",
+            "value": 2.2488779828184278
+          },
+          {
+            "name": "Other breakfast cereals",
+            "value": 0.9302679261184903
+          },
+          {
+            "name": "Biscuits",
+            "value": 1.5280914489192021
+          },
+          {
+            "name": "Buns, cakes, pastries and fruit pies",
+            "value": 1.8057130779863448
+          },
+          {
+            "name": "Puddings",
+            "value": 0.8152739759910093
+          }
+        ],
+        "name": "Cereals and cereal products"
+      },
+      {
+        "children": [
+          {
+            "name": "Whole milk (3.8% fat)",
+            "value": 2.5420237458631036
+          },
+          {
+            "name": "Semi skimmed milk (1.8% fat)",
+            "value": 5.426209245701354
+          },
+          {
+            "name": "Skimmed milk (0.5% fat)",
+            "value": 0.6911056614351898
+          },
+          {
+            "name": "Other milk and cream",
+            "value": 0.7938948393776291
+          },
+          {
+            "name": "Cheese",
+            "value": 4.303150301195686
+          },
+          {
+            "name": "Yoghurt, fromage frais and other dairy desserts",
+            "value": 2.019050550723245
+          },
+          {
+            "name": "Ice cream",
+            "value": 0.47866321181069
+          }
+        ],
+        "name": "Milk and milk products"
+      },
+      {
+        "children": [
+          {
+            "name": "Eggs and egg dishes",
+            "value": 2.702364661610411
+          }
+        ],
+        "name": "Eggs and egg dishes"
+      },
+      {
+        "children": [
+          {
+            "name": "Fat spreads",
+            "value": 0.06055062581085789
+          }
+        ],
+        "name": "Fat spreads"
+      },
+      {
+        "children": [
+          {
+            "name": "Bacon and ham",
+            "value": 4.0244056723374415
+          },
+          {
+            "name": "Beef, veal and dishes",
+            "value": 6.324252642765162
+          },
+          {
+            "name": "Lamb and dishes",
+            "value": 1.9729216016857083
+          },
+          {
+            "name": "Pork and dishes",
+            "value": 2.3113566685453963
+          },
+          {
+            "name": "Coated chicken and turkey",
+            "value": 2.134524118926217
+          },
+          {
+            "name": "Chicken, turkey and dishes",
+            "value": 10.568256294868391
+          },
+          {
+            "name": "Liver and dishes",
+            "value": 0.2652912563429116
+          },
+          {
+            "name": "Burgers and kebabs",
+            "value": 1.3698479609126417
+          },
+          {
+            "name": "Sausages",
+            "value": 2.874948669353481
+          },
+          {
+            "name": "Meat pies and pastries",
+            "value": 1.4465123367688715
+          },
+          {
+            "name": "Other meat, meat products and dishes",
+            "value": 0.9517049353965982
+          }
+        ],
+        "name": "Meat and meat products"
+      },
+      {
+        "children": [
+          {
+            "name": "White fish coated or fried including fish fingers",
+            "value": 1.8882860832493926
+          },
+          {
+            "name": "Other white fish, shellfish or fish dishes and canned tuna",
+            "value": 2.9971321669060167
+          },
+          {
+            "name": "Oily fish",
+            "value": 2.0412632917227373
+          }
+        ],
+        "name": "Fish and fish dishes"
+      },
+      {
+        "children": [
+          {
+            "name": "Salad and other raw vegetables",
+            "value": 0.4161978400166452
+          },
+          {
+            "name": "Vegetables (not raw) including vegetable dishes",
+            "value": 4.0646516281459455
+          },
+          {
+            "name": "Chips, fried and roast potatoes and potato products",
+            "value": 1.999819429656419
+          },
+          {
+            "name": "Other potatoes, potato salads and dishes",
+            "value": 1.412362931531156
+          }
+        ],
+        "name": "Vegetables and potatoes"
+      },
+      {
+        "children": [
+          {
+            "name": "Savoury snacks",
+            "value": 0.8319865138237976
+          }
+        ],
+        "name": "Savoury snacks"
+      },
+      {
+        "children": [
+          {
+            "name": "Nuts and seeds",
+            "value": 0.48572355083023927
+          }
+        ],
+        "name": "Nuts and seeds"
+      },
+      {
+        "children": [
+          {
+            "name": "Fruit",
+            "value": 1.1640927710774036
+          }
+        ],
+        "name": "Fruit"
+      },
+      {
+        "children": [
+          {
+            "name": "Sugars, including table sugar, preserves and sweet spreads",
+            "value": 0.0
+          },
+          {
+            "name": "Chocolate confectionery",
+            "value": 0.8562740737465538
+          },
+          {
+            "name": "Sugar confectionery",
+            "value": 0.0
+          }
+        ],
+        "name": "Sugar, preserves and confectionery"
+      },
+      {
+        "children": [
+          {
+            "name": "Fruit juice",
+            "value": 0.43203207178452474
+          },
+          {
+            "name": "Tea, coffee and water",
+            "value": 0.33002379667070203
+          },
+          {
+            "name": "Soft drinks, not low calorie",
+            "value": 0.0
+          }
+        ],
+        "name": "Non-alcoholic beverages"
+      },
+      {
+        "children": [
+          {
+            "name": "Beer, lager, cider and perry",
+            "value": 0.3174389910726376
+          },
+          {
+            "name": "Wine",
+            "value": 0.0
+          },
+          {
+            "name": "Spirits and liqueurs",
+            "value": 0.0
+          }
+        ],
+        "name": "Alcoholic beverages"
+      },
+      {
+        "children": [
+          {
+            "name": "Dry weight beverages",
+            "value": 0.307479639512383
+          },
+          {
+            "name": "Soup, manufactured/retail and homemade",
+            "value": 0.7708604766812519
+          },
+          {
+            "name": "Savoury sauces, pickles, gravies and condiments",
+            "value": 0.666290013888936
+          }
+        ],
+        "name": "Miscellaneous"
+      }
+    ],
+    "name": "foods"
+  }
+}
